@@ -1,0 +1,4 @@
+Polo’s account is placed in the centre with unique color. 
+Primary friends of Polo are red nodes derived from the Polo with orange edges. 
+Next level users are blue nodes derived from primary friends with purple edges. 
+The relationship of following should have been shown by arrows on edges.Word count: 49
