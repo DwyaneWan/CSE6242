@@ -1,6 +1,0 @@
-Average Degree: 2.093Diameter: 4Average Path length: 2.8848972792892837
-
-On average each user is connected to 2 others. It’s reasonable because while Polo and his primary friends have 20 or 40 degree, most of the next level users have 1 or 2 degree.
-In order to minimize overlaps while keeping the graph as compact as possible, a suitable graph diameter is around 4. It’s dependent on node sizes and edge thickness.In order to reduce overlap, the paths between Polo and his primary friends are expanded to give room to the clusters of his primary friends and their friends and followers, where the paths are short.
-
-Word count: 100
