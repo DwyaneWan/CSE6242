@@ -1,0 +1,1 @@
+I scaled the nodes' radii linearly. The radii of a node is just the degree of the node. I think this is a good choice because it is simple enough and accomplishes the scaling purpose well enough that the result graph looks just right.

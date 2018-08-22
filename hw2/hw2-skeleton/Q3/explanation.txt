@@ -1,0 +1,5 @@
+A2
+Plasma glucose vs. Insulin is better at separating the classes because as shown in the diagram the negative class is to the left and bottom to the positive class, while in the other combination, we can only clearly see that the negative class is to the left of the positive class.
+ 
+C
+When the dataset has a big range of values, we want to use sqrt scale or log scale. Compared to sqrt scale, log scale can handle a bigger range of values but the upper points would be denser. For insulin vs. plasma glucose, sqrt scale is better because the range is not too big.

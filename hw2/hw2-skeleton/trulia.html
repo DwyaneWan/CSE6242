@@ -1,0 +1,1079 @@
+<html>
+<head>
+    <meta name="description" content=", West Virginia home prices displayed on an interactive Heat Map. See the most and least popular neighborhoods and ZIP codes, average/median home sales price in . Find your dream home on Trulia--Delightfully Smart Real Estate Search">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>US Home Prices and USA Heat Map - Trulia Real Estate Search - Trulia.com</title>
+    <link rel="stylesheet" type="text/css" href="//static.trulia-cdn.com/css/ba8ed86/css/compiled/combo/base.css" />
+    <link rel="stylesheet" type="text/css" href="//static.trulia-cdn.com/css/ba8ed86/css/compiled/combo/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="//static.trulia-cdn.com/css/ba8ed86/css/compiled/combo/mod-styles.css" />
+    <link rel="stylesheet" type="text/css" href="//static.trulia-cdn.com/css/ba8ed86/css/compiled/combo/mod-maps_backbone.css" />
+    <style>
+        #mapTypeControl {top: 7px; bottom: auto;}
+        #mapTypeControl .mapTypeControl {width: 75px;}
+        #mapZoomControl {top: 53px;}
+    </style>
+    <script>
+        var qpn_NAMES = {
+                'site':'Trulia',
+                'site_possessive':'Trulia\'s',
+                'mytrulia':'My Trulia',
+                'email_domain':'trulia.com',
+                'truliamap':'TruliaMap',
+                'voices':'Trulia Voices',
+                'account_source':'trulia'
+            },
+            _trulia_logged_in = +'0',
+            _is_real_estate_pro = +'0',
+            _supports_my_trulia = +'1',
+            _release_version_tab = 'release-2017.42.2',
+            _js_server_root = '//static.trulia-cdn.com/javascript/ba8ed86/',
+            _fb_app_id = '183577541666001',
+            _google_client_id = '{GOOGLE_CLIENT_ID}';
+
+        var trulia = (typeof(trulia) !== "undefined") ? trulia : {} ;
+        trulia.tracking = trulia.tracking || {};
+        trulia.tracking.omniture_id = 'truliacom';
+    </script>
+
+    <script language="JavaScript" type="text/JavaScript">
+        // Map Related Global Variables
+        var site_root = '/';
+        var _IMAGE_SERVER_ROOT = '//mapimages.trulia.com/';
+        var _STATE_NAME = 'West Virginia';
+        var _STATE_CODE = 'WV';
+        var _COUNTY_NAME = '';
+        var _CITY_NAME = "";
+        var _HEAT_MAP_VIEW = 'national_by_state';
+        var _HEAT_MAP_SORT_COL = 'ALP';
+        var _DATA_END_DATE = '2017-08-23';
+        var _STAT_END_DATE = '2017-08-23';
+    </script>
+
+    <script type="text/javascript" src="//static.trulia-cdn.com/javascript/ba8ed86/include/js/yui/yui_trulia_core.js"></script>
+    <script type="text/javascript" src="//static.trulia-cdn.com/javascript/ba8ed86/include/js/_built/combo/first_step.js"></script>
+    <script type="text/javascript" src="//static.trulia-cdn.com/javascript/ba8ed86/include/js/_built/combo/site_js.js"></script>
+    <script type="text/javascript">
+        window.globals = {
+            baseUrl: "//static.trulia-cdn.com/javascript/ba8ed86/include/js/_built/",
+            isPro: _is_real_estate_pro,
+            isLoggedIn: _trulia_logged_in,
+            site_root: site_root
+        };
+        define('globals', function() {
+            return window.globals;
+        });
+    </script>
+</head>
+<body id="heat_map_page" class="guide_pez">
+
+<div id="cobrand_custom_header">
+
+</div>
+
+<header class="globalNav oocss " id="globalNavNormal" data-role="global_nav">
+    <div id="navbarContainer"><div class="navbarWrapper navbar__navbarWrapper___3KU4" data-reactroot="" data-reactid="1" data-react-checksum="-220359642"><svg class="floatRight mdHidden lrgHidden overlay-button__menuIcon___11l6" aria-labelledby="navMenuTitle navMenuDesc" viewBox="0 0 27 26" data-reactid="2"><title id="navMenuTitle" data-reactid="3">Menu Icon</title><desc id="navMenuDesc" data-reactid="4">Click to open Mobile Menu</desc><rect x="0.5" y="0.5" width="25" height="25" rx="3" ry="3" stroke-linecap="round" stroke-linejoin="round" data-reactid="5"></rect><g data-reactid="6"><line class="accelerate" style="-webkit-transform:translateY(0px) rotate(0deg) translateZ(0);transform:translateY(0px) rotate(0deg) translateZ(0);" id="bottom" x1="20.8" y1="7.7" x2="5.2" y2="7.7" fill="none" stroke-linecap="round" data-reactid="7"></line><line style="opacity:1;" id="mid" x1="20.8" y1="13.2" x2="5.2" y2="13.2" fill="none" stroke-linecap="round" data-reactid="8"></line><line class="accelerate" style="-webkit-transform:translateY(0px) rotate(0deg) translateZ(0);transform:translateY(0px) rotate(0deg) translateZ(0);" id="top" x1="20.8" y1="18.8" x2="5.2" y2="18.8" fill="none" stroke-linecap="round" data-reactid="9"></line></g></svg><div class="menuOverlay mdHidden lrgHidden hideVisually" data-reactid="10"><div class="overlayAll backgroundInverse" style="opacity:0;" data-reactid="11"></div><div class="mobileNavBk backgroundInverse floatRight" style="-webkit-transform:scale(0) translateZ(0);transform:scale(0) translateZ(0);" data-reactid="12"></div><div class="mobileNav accelerate" style="opacity:0;" data-reactid="13"><div class="centerHorizontal staggerM" data-reactid="14"><a href="/" class="logo txtC" data-reactid="15"><svg version="1.1" x="0px" y="0px" viewBox="0 0 924.092 294.029" enable-background="new 0 0 924.092 294.029" aria-labelledby="logoTitleImg" role="img" data-reactid="16"><title id="logoTitleImg" data-reactid="17">Trulia Logo</title><g data-reactid="18"><circle fill="#FFFFFF" cx="700.921" cy="54.323" r="22.6" data-reactid="19"></circle><path fill="#FFFFFF" d="M257.252,260.428c-32.896,0-49.189-18.798-49.189-50.127v-82.711h-29.762V95.321h29.762V53.967 l39.163-9.713v51.068h41.04v32.268h-41.04v79.265c0,12.531,5.638,17.857,18.169,17.857c8.146,0,14.725-0.312,25.377-1.567v32.896 C279.808,258.86,268.842,260.428,257.252,260.428z" data-reactid="20"></path><path fill="#FFFFFF" d="M397.145,130.097c-27.57,0-41.981,19.736-41.981,46.054v82.083h-39.475V95.321h33.208l3.447,24.436 c7.52-18.798,26.944-26.63,46.054-26.63c4.073,0,8.146,0.314,12.219,0.941v37.594C406.229,130.724,401.53,130.097,397.145,130.097z " data-reactid="21"></path><path fill="#FFFFFF" d="M537.864,258.234l-2.82-21.304c-7.832,15.978-26.003,25.377-46.68,25.377 c-34.776,0-56.394-23.497-56.394-58.273V95.321h39.163v99.94c0,19.112,7.52,31.017,28.197,31.017 c9.085,0,15.351-3.447,20.051-8.146c9.399-8.773,11.905-23.497,11.905-36.655V95.321h39.161v162.913H537.864z" data-reactid="22"></path><path fill="#FFFFFF" d="M640.575,260.113c-26.63,0-44.487-12.846-44.487-43.86V31.722h39.475v177.952 c0,9.399,2.191,15.663,15.663,15.663c3.447,0,4.387-0.312,6.579-0.312v32.894C649.974,259.487,648.407,260.113,640.575,260.113z" data-reactid="23"></path><path fill="#FFFFFF" d="M681.027,258.234V95.321h39.787v162.913H681.027z" data-reactid="24"></path><path fill="#FFFFFF" d="M876.275,260.74c-16.919,0-26.318-10.652-27.57-22.871c-7.52,13.16-26.315,24.438-49.501,24.438 c-38.849,0-58.9-24.438-58.9-51.068c0-31.015,24.124-48.874,55.141-51.066l47.933-3.447v-10.025 c0-15.351-5.326-25.691-27.57-25.691c-18.169,0-28.823,8.146-29.762,23.185h-37.908c2.191-36.657,31.329-52.947,67.67-52.947 c27.885,0,51.694,8.773,61.093,33.208c4.073,10.34,4.699,21.93,4.699,32.896v60.465c0,7.52,2.506,10.34,9.085,10.34 c2.508,0,5.014-0.626,5.014-0.626v28.823C889.12,259.175,885.674,260.74,876.275,260.74z M843.378,185.862l-41.355,3.134 c-11.905,0.939-23.497,8.144-23.497,21.304c0,12.531,10.966,20.363,23.183,20.363c24.438,0,41.669-13.158,41.669-37.282V185.862z" data-reactid="25"></path><g data-reactid="26"><path fill="#FFFFFF" d="M87.573,31.722c-35.964,0.201-59.18,24.336-59.18,60.831c0,30.212,19.708,56.047,30.941,95.325 c6.431,22.493,9.89,50.025,11.705,70.356h33.068c1.815-20.331,5.274-47.863,11.705-70.356 c11.232-39.278,30.941-65.113,30.941-95.325C146.753,56.058,123.538,31.924,87.573,31.722z M87.763,124.695 c-14.95,0-27.07-12.12-27.07-27.07s12.12-27.07,27.07-27.07c14.951,0,27.07,12.12,27.07,27.07S102.714,124.695,87.763,124.695z" data-reactid="27"></path></g></g></svg></a></div><div class="overlayForm clearfix" data-reactid="28"><form class="form man autoCompleteSearchForm search_box__autoCompleteSearchForm___1IfkN" data-reactid="29"><div class="field man" data-reactid="30"><span class="fieldItem fieldAppend text" data-reactid="31"><div class="buttonContainer" data-reactid="32"><button id="dropdownBtn" class="addOn btn btnDefault floatRight search_box__submitButton___26LNp" type="submit" data-reactid="33"><i class="iconSearch" data-reactid="34"></i></button></div><div class="inputField search_box__inputField___2v8Nw" data-reactid="35"><input type="search" value="" name="location-autocomplete" placeholder="Search by neighborhood, city, county or zip" autocomplete="off" data-reactid="36"/></div></span></div></form></div><div data-reactid="37"><ul class="overlayMenu typeReversed typeEmphasize staggerLi" data-reactid="38"><li class="txtL things soverlay-Buy-Buy " style="opacity:[object Object];" data-reactid="39"><a href="//www.trulia.com/" data-reactid="40">Buy</a></li><li class="txtL things soverlay-Rent-Rent " style="opacity:[object Object];" data-reactid="41"><a href="//www.trulia.com/rent/" data-reactid="42">Rent</a></li><li class="txtL things soverlay-Mortgage-Mortgage " style="opacity:[object Object];" data-reactid="43"><a href="//www.trulia.comundefined" data-reactid="44">Mortgage</a></li><li class="txtL things soverlay-Sell-Sell " style="opacity:[object Object];" data-reactid="45"><a href="//www.trulia.com/sell/?ts=trulia&amp;tscamp=global_nav_whats_my_home_worth" rel="nofollow" data-reactid="46">Sell</a></li><li class="txtL things soverlay-For Professionals-For Professionals " style="opacity:[object Object];" data-reactid="47"><a href="//www.trulia.com/real-estate-leads/" rel="nofollow" data-reactid="48">For Professionals</a></li><li class="txtL things soverlay-Local Scoop-Local Scoop " style="opacity:[object Object];" data-reactid="49"><a href="//www.trulia.com/local-info/cities" data-reactid="50">Local Scoop</a></li><li class="txtL things" style="opacity:[object Object];" data-reactid="51"><button data-reactid="52">More</button></li><li class="txtL things sTrulia Blogs " style="opacity:1;display:none;" data-reactid="53"><a href="//www.trulia.com/blog/" data-reactid="54">Trulia Blogs</a></li><li class="txtL things sGo Mobile with Trulia " style="opacity:1;display:none;" data-reactid="55"><a href="//www.trulia.com/mobile/" data-reactid="56">Go Mobile with Trulia</a></li><li class="txtL things sAdvice " style="opacity:1;display:none;" data-reactid="57"><a href="//www.trulia.com/voices/" data-reactid="58">Advice</a></li><li class="txtL things sHelp Center " style="opacity:1;display:none;" data-reactid="59"><a href="//www.trulia.com/help/" data-reactid="60">Help Center</a></li><li class="txtL things sFind an Agent " style="opacity:1;display:none;" data-reactid="61"><a href="//www.trulia.com/directory/" data-reactid="62">Find an Agent</a></li><li class="txtL things sFor Professionals " style="opacity:1;display:none;" data-reactid="63"><a href="//www.trulia.com/real-estate-leads/" data-reactid="64">For Professionals</a></li></ul></div></div><div class="signInButtonContainer accelerate" style="opacity:0;" data-reactid="65"><button class="signInButton baz btn btnDefault btnSml" data-reactid="66">Sign up/Sign In</button></div></div><nav class="navbar navbar__navbar___3Vtd" data-reactid="67"><div class="containerFluid navbar__containerFluid___ui6L" data-reactid="68"><div class="navbar__navbarHeader___2Znm" data-reactid="69"><a href="/" class="floatLeft navbar__navbarLogo___2-cY" data-reactid="70"><svg version="1.1" x="0px" y="0px" viewBox="0 0 924.092 294.029" enable-background="new 0 0 924.092 294.029" aria-labelledby="logoTitleImg" role="img" data-reactid="71"><title id="logoTitleImg" data-reactid="72">Trulia Logo</title><g data-reactid="73"><circle fill="#FFFFFF" cx="700.921" cy="54.323" r="22.6" data-reactid="74"></circle><path fill="#FFFFFF" d="M257.252,260.428c-32.896,0-49.189-18.798-49.189-50.127v-82.711h-29.762V95.321h29.762V53.967 l39.163-9.713v51.068h41.04v32.268h-41.04v79.265c0,12.531,5.638,17.857,18.169,17.857c8.146,0,14.725-0.312,25.377-1.567v32.896 C279.808,258.86,268.842,260.428,257.252,260.428z" data-reactid="75"></path><path fill="#FFFFFF" d="M397.145,130.097c-27.57,0-41.981,19.736-41.981,46.054v82.083h-39.475V95.321h33.208l3.447,24.436 c7.52-18.798,26.944-26.63,46.054-26.63c4.073,0,8.146,0.314,12.219,0.941v37.594C406.229,130.724,401.53,130.097,397.145,130.097z " data-reactid="76"></path><path fill="#FFFFFF" d="M537.864,258.234l-2.82-21.304c-7.832,15.978-26.003,25.377-46.68,25.377 c-34.776,0-56.394-23.497-56.394-58.273V95.321h39.163v99.94c0,19.112,7.52,31.017,28.197,31.017 c9.085,0,15.351-3.447,20.051-8.146c9.399-8.773,11.905-23.497,11.905-36.655V95.321h39.161v162.913H537.864z" data-reactid="77"></path><path fill="#FFFFFF" d="M640.575,260.113c-26.63,0-44.487-12.846-44.487-43.86V31.722h39.475v177.952 c0,9.399,2.191,15.663,15.663,15.663c3.447,0,4.387-0.312,6.579-0.312v32.894C649.974,259.487,648.407,260.113,640.575,260.113z" data-reactid="78"></path><path fill="#FFFFFF" d="M681.027,258.234V95.321h39.787v162.913H681.027z" data-reactid="79"></path><path fill="#FFFFFF" d="M876.275,260.74c-16.919,0-26.318-10.652-27.57-22.871c-7.52,13.16-26.315,24.438-49.501,24.438 c-38.849,0-58.9-24.438-58.9-51.068c0-31.015,24.124-48.874,55.141-51.066l47.933-3.447v-10.025 c0-15.351-5.326-25.691-27.57-25.691c-18.169,0-28.823,8.146-29.762,23.185h-37.908c2.191-36.657,31.329-52.947,67.67-52.947 c27.885,0,51.694,8.773,61.093,33.208c4.073,10.34,4.699,21.93,4.699,32.896v60.465c0,7.52,2.506,10.34,9.085,10.34 c2.508,0,5.014-0.626,5.014-0.626v28.823C889.12,259.175,885.674,260.74,876.275,260.74z M843.378,185.862l-41.355,3.134 c-11.905,0.939-23.497,8.144-23.497,21.304c0,12.531,10.966,20.363,23.183,20.363c24.438,0,41.669-13.158,41.669-37.282V185.862z" data-reactid="80"></path><g data-reactid="81"><path fill="#FFFFFF" d="M87.573,31.722c-35.964,0.201-59.18,24.336-59.18,60.831c0,30.212,19.708,56.047,30.941,95.325 c6.431,22.493,9.89,50.025,11.705,70.356h33.068c1.815-20.331,5.274-47.863,11.705-70.356 c11.232-39.278,30.941-65.113,30.941-95.325C146.753,56.058,123.538,31.924,87.573,31.722z M87.763,124.695 c-14.95,0-27.07-12.12-27.07-27.07s12.12-27.07,27.07-27.07c14.951,0,27.07,12.12,27.07,27.07S102.714,124.695,87.763,124.695z" data-reactid="82"></path></g></g></svg></a></div><div class="clearfix" data-reactid="83"><div class="smlHidden xsHidden xxsHidden miniHidden menu__navbarMenu___19zs" data-reactid="84"><section class="menu__dropdown___3YPv" data-reactid="85"><header data-reactid="86"><a href="/" data-reactid="87">Buy</a></header><ul class="txtL menu__dropdownMenu___3-lz" data-reactid="88"><li data-reactid="89"><a href="//www.trulia.com/new-for-sale-properties/" class="menu__dropdownToggle___1pIe" data-reactid="90"><!-- react-text: 91 -->See Newest Listings<!-- /react-text --><!-- react-text: 92 --> <!-- /react-text --><span data-reactid="93"></span></a></li></ul></section><section class="menu__dropdown___3YPv" data-reactid="94"><header data-reactid="95"><a href="/rent/" data-reactid="96">Rent</a></header><ul class="txtL menu__dropdownMenu___3-lz" data-reactid="97"><li data-reactid="98"><a href="//www.trulia.com/new-for-rent-properties/" class="menu__dropdownToggle___1pIe" data-reactid="99"><!-- react-text: 100 -->See Newest Listings<!-- /react-text --><!-- react-text: 101 --> <!-- /react-text --><span data-reactid="102"></span></a></li><li class="menu__divider___2Wwn" data-reactid="103"></li><li data-reactid="104"><a href="//www.trulia.com/rent/rental-resume/" rel="nofollow" class="menu__dropdownToggle___1pIe" data-reactid="105"><!-- react-text: 106 -->Create Your Rental Resume<!-- /react-text --><!-- react-text: 107 --> <!-- /react-text --><span data-reactid="108"></span></a></li><li data-reactid="109"><a href="//www.trulia.com/post-rental/" class="menu__dropdownToggle___1pIe" data-reactid="110"><!-- react-text: 111 -->Post Your Rental Listing<!-- /react-text --><!-- react-text: 112 --> <!-- /react-text --><span data-reactid="113"></span></a></li></ul></section><section class="menu__dropdown___3YPv" data-reactid="114"><header data-reactid="115"><a data-reactid="116">Mortgage</a></header><ul class="txtL menu__dropdownMenu___3-lz" data-reactid="117"><li data-reactid="118"><a href="//www.trulia.com/mortgages/pre-approval?omni_src=mortgage%7Cglobal_nav" class="menu__dropdownToggle___1pIe" data-reactid="119"><!-- react-text: 120 -->Get Pre-Qualified<!-- /react-text --><!-- react-text: 121 --> <!-- /react-text --><span data-reactid="122"></span></a></li><li data-reactid="123"><a href="//www.trulia.com/mortgage-rates/" class="menu__dropdownToggle___1pIe" data-reactid="124"><!-- react-text: 125 -->Mortgage Rates<!-- /react-text --><!-- react-text: 126 --> <!-- /react-text --><span data-reactid="127"></span></a></li><li data-reactid="128"><a href="//www.trulia.com/refinance-rates/" class="menu__dropdownToggle___1pIe" data-reactid="129"><!-- react-text: 130 -->Refinance Rates<!-- /react-text --><!-- react-text: 131 --> <!-- /react-text --><span data-reactid="132"></span></a></li><li class="menu__divider___2Wwn" data-reactid="133"></li><li data-reactid="134"><a href="//www.trulia.com/mortgage-payment-calculator/" class="menu__dropdownToggle___1pIe" data-reactid="135"><!-- react-text: 136 -->Mortgage Calculator<!-- /react-text --><!-- react-text: 137 --> <!-- /react-text --><span data-reactid="138"></span></a></li><li data-reactid="139"><a href="//www.trulia.com/house-affordability-calculator/" class="menu__dropdownToggle___1pIe" data-reactid="140"><!-- react-text: 141 -->Affordability Calculator<!-- /react-text --><!-- react-text: 142 --> <!-- /react-text --><span data-reactid="143"></span></a></li><li data-reactid="144"><a href="//www.trulia.com/rent_vs_buy/" class="menu__dropdownToggle___1pIe" data-reactid="145"><!-- react-text: 146 -->Rent vs Buy Calculator<!-- /react-text --><!-- react-text: 147 --> <!-- /react-text --><span data-reactid="148"></span></a></li><li data-reactid="149"><a href="//www.trulia.com/home-loan-refinance-calculator/" class="menu__dropdownToggle___1pIe" data-reactid="150"><!-- react-text: 151 -->Refinance Calculator<!-- /react-text --><!-- react-text: 152 --> <!-- /react-text --><span data-reactid="153"></span></a></li></ul></section><section data-reactid="154"><header data-reactid="155"><a href="/sell/?ts=trulia&amp;tscamp=global_nav_whats_my_home_worth" rel="nofollow" data-reactid="156">Sell</a></header></section><section class="menu__dropdown___3YPv" data-reactid="157"><header data-reactid="158"><a href="/local-info/cities" data-reactid="159">Local Scoop</a></header><ul class="txtL menu__dropdownMenu___3-lz" data-reactid="160"><li data-reactid="161"><a href="//www.trulia.com/local-info/cities" class="menu__dropdownToggle___1pIe" data-reactid="162"><!-- react-text: 163 -->All Trulia Neighborhood Guides<!-- /react-text --><!-- react-text: 164 --> <!-- /react-text --><span data-reactid="165"></span></a></li><li data-reactid="166"><a href="//www.trulia.com/local/" class="menu__dropdownToggle___1pIe" data-reactid="167"><!-- react-text: 168 -->Maps by Trulia<!-- /react-text --><!-- react-text: 169 --> <!-- /react-text --><span data-reactid="170"></span></a></li></ul></section><section class="menu__dropdown___3YPv" data-reactid="171"><header data-reactid="172"><a data-reactid="173">More</a></header><ul class="txtL menu__dropdownMenu___3-lz" data-reactid="174"><li data-reactid="175"><a href="//www.trulia.com/blog/" class="menu__dropdownToggle___1pIe" data-reactid="176"><!-- react-text: 177 -->Trulia Blogs<!-- /react-text --><!-- react-text: 178 --> <!-- /react-text --><span data-reactid="179"></span></a></li><li data-reactid="180"><a href="//www.trulia.com/mobile/" class="menu__dropdownToggle___1pIe" data-reactid="181"><!-- react-text: 182 -->Go Mobile with Trulia<!-- /react-text --><!-- react-text: 183 --> <!-- /react-text --><span data-reactid="184"></span></a></li><li data-reactid="185"><a href="//www.trulia.com/voices/" class="menu__dropdownToggle___1pIe" data-reactid="186"><!-- react-text: 187 -->Advice<!-- /react-text --><!-- react-text: 188 --> <!-- /react-text --><span data-reactid="189"></span></a></li><li data-reactid="190"><a href="//www.trulia.com/help/" class="menu__dropdownToggle___1pIe" data-reactid="191"><!-- react-text: 192 -->Help Center<!-- /react-text --><!-- react-text: 193 --> <!-- /react-text --><span data-reactid="194"></span></a></li><li data-reactid="195"><a href="//www.trulia.com/directory/" class="menu__dropdownToggle___1pIe" data-reactid="196"><!-- react-text: 197 -->Find an Agent<!-- /react-text --><!-- react-text: 198 --> <!-- /react-text --><span data-reactid="199"></span></a></li><li class="menu__dropdown___3YPv" data-reactid="200"><a href="//www.trulia.com/real-estate-leads/" rel="nofollow" class="menu__dropdownToggle___1pIe" data-reactid="201"><!-- react-text: 202 -->For Professionals<!-- /react-text --><!-- react-text: 203 --> <!-- /react-text --><span class="iconRightOpen floatRight" data-reactid="204"></span></a><ul class="txtL menu__dropdownMenu___3-lz" data-reactid="205"><li data-reactid="206"><a href="//www.trulia.com/real-estate-leads/" rel="nofollow" class="menu__dropdownToggle___1pIe" data-reactid="207"><!-- react-text: 208 -->Get Leads by ZIP<!-- /react-text --><!-- react-text: 209 --> <!-- /react-text --><span data-reactid="210"></span></a></li><li data-reactid="211"><a href="//www.trulia.com/submit_listings/" rel="nofollow" class="menu__dropdownToggle___1pIe" data-reactid="212"><!-- react-text: 213 -->Submit Listings<!-- /react-text --><!-- react-text: 214 --> <!-- /react-text --><span data-reactid="215"></span></a></li><li data-reactid="216"><a href="//www.trulia.com/advertising/mortgage-leads/" class="menu__dropdownToggle___1pIe" data-reactid="217"><!-- react-text: 218 -->Get Mortgage Leads<!-- /react-text --><!-- react-text: 219 --> <!-- /react-text --><span data-reactid="220"></span></a></li></ul></li></ul></section></div><ul class="smlHidden xsHidden xxsHidden miniHidden menu-personalized__navbarMenu___1ybM menu-personalized__menuPersonalized___OCr0" data-reactid="221"><li data-reactid="222"><button class="ban" data-reactid="223">Saved Homes</button></li><li data-reactid="224"><button class="ban" data-reactid="225">Saved Searches</button></li><li data-reactid="226"><button class="baz btn btnDefault btnSml signinButton menu-personalized__signinButton___1CxD" data-reactid="227">Sign In</button></li></ul><span data-reactid="228"></span></div></div></nav></div></div>
+    <div class="backgroundBasic">
+
+
+
+        <div class="backgroundBasic txtL pan" id="global-sub-nav" >
+            <div class="container containerResponsive">
+                <div class="line mln">
+
+
+
+
+
+
+                    <script type="text/template" id="emptyListItemTemplate">
+                        <li class="pvn mvn"></li>
+                    </script>
+
+
+
+                    <script type="text/template" id="autoSuggestItemTemplate">
+                        <li class="man pvs" data-title="<%= title %>" data-value="<%= value %>" data-location-id="<%= locationId %>" data-pid="<%= pid %>" data-property-Index="<%= propertyIndex %>" data-ac_index="<%= ac_index %>" data-location-type="<%= locationType %>" data-bed-Filter="<%= bedFilter %>" data-bath-Filter="<%= bathFilter %>" data-property-Filter="<%= propertyFilter %>">
+                            <div class="line man">
+                                <div class="col cols20 pan typeTruncate">
+                                    <%= display %>
+                                </div>
+                                <div class="colExt txtR typeLowlight pan"><%= suffix %></div>
+                            </div>
+                        </li>
+                    </script>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</header>
+
+
+<link rel="stylesheet" type="text/css" href="//static.trulia-cdn.com/javascript/ba8ed86/include/js/_built/" >
+
+
+
+<script>
+    require.config({
+        baseUrl: "//static.trulia-cdn.com/javascript/ba8ed86/include/js/_built/"
+    });
+
+    window.globals = {
+        site_root: site_root ? site_root : '',
+        isUserLoggedIn: false,
+        isPro : false
+    }
+
+    define('globals', function() {
+        return window.globals;
+    });
+</script>
+
+<script>
+    if (typeof trulia == 'undefined')
+    {
+        trulia = {};
+    }
+
+    if (!trulia.page_name)
+    {
+        trulia.page_name = 'heatmap';
+    }
+
+    var site_root = site_root ? site_root : '';
+    var _SITE_ROOT = _SITE_ROOT ? _SITE_ROOT : '';
+    var _IMAGE_SERVER = _IMAGE_SERVER ? _IMAGE_SERVER : '';
+    var _IMAGE_SERVER_ROOT = '//static.trulia-cdn.com';
+    var _qa_remct_tkn = _qa_remct_tkn ? _qa_remct_tkn : '';
+    var _puid = _puid ? _puid : '';
+    var _release_version_tab = _release_version_tab ? _release_version_tab : '';
+
+    window.globals = window.globals || {}
+    window.globals['site_root'] = site_root
+
+
+</script>
+
+<script>
+    window.trulia = window.trulia || {};
+    window.trulia.navbar = {"location_display_name":"","location_id":"","site_root":"\/\/www.trulia.com","links":[{"label":"Buy","uri":"\/","tracking_string":"Buy","children":[{"label":"See Newest Listings","uri":"\/new-for-sale-properties\/","tracking_string":"Buy|nullGeo|Newest"}]},{"label":"Rent","uri":"\/rent\/","tracking_string":"Rent","children":[{"label":"See Newest Listings","uri":"\/new-for-rent-properties\/","tracking_string":"Rent|nullGeo|Newest"},{"divider":true},{"label":"Create Your Rental Resume","uri":"\/rent\/rental-resume\/","tracking_string":"Rent|nullGeo|Rental_Resume","nofollow":true},{"label":"Post Your Rental Listing","uri":"\/post-rental\/","tracking_string":"Rent|nullGeo|SLS"}]},{"label":"Mortgage","tracking_string":"Mortgage","children":[{"label":"Get Pre-Qualified","uri":"\/mortgages\/pre-approval?omni_src=mortgage%7Cglobal_nav","tracking_string":"Mortgage|nullGeo|Preapproval"},{"label":"Mortgage Rates","uri":"\/mortgage-rates\/","tracking_string":"Mortgage|nullGeo|Mortgage"},{"label":"Refinance Rates","uri":"\/refinance-rates\/","tracking_string":"Mortgage|nullGeo|Refinance"},{"divider":true},{"label":"Mortgage Calculator","uri":"\/mortgage-payment-calculator\/","tracking_string":"Mortgage|nullGeo|Calculators"},{"label":"Affordability Calculator","uri":"\/house-affordability-calculator\/","tracking_string":"Mortgage|nullGeo|Calculators"},{"label":"Rent vs Buy Calculator","uri":"\/rent_vs_buy\/","tracking_string":"Mortgage|nullGeo|Calculators"},{"label":"Refinance Calculator","uri":"\/home-loan-refinance-calculator\/","tracking_string":"Mortgage|nullGeo|Calculators"}]},{"label":"Sell","uri":"\/sell\/?ts=trulia&tscamp=global_nav_whats_my_home_worth","tracking_string":"Sell","nofollow":true},{"label":"For Professionals","uri":"\/real-estate-leads\/","tracking_string":"ForProfessionals","children":[{"label":"Get Leads by ZIP","uri":"\/real-estate-leads\/","tracking_string":"ForProfessionals|nullGeo|PremierAgent","nofollow":true},{"label":"Submit Listings","uri":"\/submit_listings\/","tracking_string":"ForProfessionals|nullGeo|Listings","nofollow":true},{"label":"Get Mortgage Leads","uri":"\/advertising\/mortgage-leads\/","tracking_string":"ForProfessionals|nullGeo|professional lender advertising"}],"pro":true,"nofollow":true},{"label":"Local Scoop","uri":"\/local-info\/cities","tracking_string":"LocalScoop","children":[{"label":"All Trulia Neighborhood Guides","uri":"\/local-info\/cities","tracking_string":"LocalScoop|nullGeo|Neighborhood_Guides"},{"label":"Maps by Trulia","uri":"\/local\/","tracking_string":"LocalScoop|nullGeo|Local|Maps"}]},{"label":"More","tracking_string":"More","children":[{"label":"Trulia Blogs","uri":"\/blog\/","tracking_string":"More|nullGeo|Blog"},{"label":"Go Mobile with Trulia","uri":"\/mobile\/","tracking_string":"More|nullGeo|Mobile"},{"label":"Advice","uri":"\/voices\/","tracking_string":"More|nullGeo|Voices"},{"label":"Help Center","uri":"\/help\/","tracking_string":"More|nullGeo|Help"},{"label":"Find an Agent","uri":"\/directory\/","tracking_string":"More|nullGeo|FindPro"},{"label":"For Professionals","uri":"\/real-estate-leads\/","tracking_string":"ForProfessionals","children":[{"label":"Get Leads by ZIP","uri":"\/real-estate-leads\/","tracking_string":"More|nullGeo|PremierAgent","nofollow":true},{"label":"Submit Listings","uri":"\/submit_listings\/","tracking_string":"More|nullGeo|Listings","nofollow":true},{"label":"Get Mortgage Leads","uri":"\/advertising\/mortgage-leads\/","tracking_string":"More|nullGeo|professional lender advertising"}],"nofollow":true,"customKey":"forProfessionalsMore"}]}]};
+    window.trulia.isMobileUser = false;
+</script>
+
+<script src="//static.trulia-cdn.com/javascript/ba8ed86/include/js/_built/navbar/main.ca3ef504fc938f0dd85f.js"></script>
+
+
+<script src="//static.trulia-cdn.com/javascript/ba8ed86/include/js/_built/combo/global_nav.b9bd9e83a8a0d5a78e6c.js"></script>
+<script>
+    require.config({
+        baseUrl: "//static.trulia-cdn.com/javascript/ba8ed86/include/js/_built/"
+    });
+</script>
+
+<div class="minwidth mart15">
+    <div style="display:block;overflow:hidden;">
+
+        <div class="padb10">
+            <span class="breadcrumb"><a class="breadcrumb" href="/">Home</a>&nbsp;&gt;&nbsp;<span>US&nbsp;Home&nbsp;Prices&nbsp;and&nbsp;Heat&nbsp;Map</span></span>
+
+        </div>
+        <div style="clear:both;">
+
+
+
+
+            <div class="clearfix padt10">
+                <div class="fleft padt10">
+                    <div class="intro_title">Welcome to the national home prices page!</div>
+                    <span class="intro_subtitle">Your home search just got easier</span>
+                    <ul class="intro_list">
+                        <li>Compare prices &amp; popularity by neighborhood, city, county, or state.</li>
+                        <li>See local market trends for <a onclick="HM_DO.updateDataTable('ALP','2017-08-23',1);">listing</a> and <a onclick="HM_DO.updateDataTable('MSP','2017-08-23',1);">sales prices</a>.</li>
+                        <li>Find out where the <a onclick="HM_DO.updateDataTable('TR','2017-08-23',1);">most popular areas for home buyers</a> are.</li>
+                    </ul>
+                </div>
+                <div class="fright module" style="width:430px;">
+                    <div class="padl20 padr20 padt10 padb20">
+                        <form id="hm_search_form" name="hm_search_form" action="/validate.php">
+                            <input type="hidden" name="tst" value="m" />
+                            <input type="hidden" name="asis" value="1" />
+                            <input type="hidden" id="hm_state" name="hm_state" value="" />
+                            <input type="hidden" id="hm_location" name="hm_location" value="" />
+                            <input type="hidden" id="search" name="search" value="" />
+                            <table cellspacing="0" cellpadding="0" border="0" width="390" style="text-align:left;">
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="home_font_large marb5">
+                                            See <strong>Heat Maps</strong> for your city or county
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td align="right" rowspan="2" valign="top" class="padr10 padt10">
+                                        <img src="//static.trulia-cdn.com/images/grnarrow_small_rt.gif" width="28" height="25" alt="arrow" />
+                                    </td>
+                                    <td style="padding-top:8px; width: 100%;">
+                                        <div style="width: 330px;">
+                                            <input type="text" autocomplete="off" name="heatmap_location" style="width:330px;font-size:14px;" id="heatmap_location" placeholder="City, County or State" class="disabled_txt pad5" />
+                                            <div id="hm_search_error" class="dark_hilite hidden">Sorry, we don't have a heatmap for that location.</div>
+                                            <script type="text/javascript">
+                                                trulia.ready(function () {
+                                                    $('#heatmap_location').autosuggest({
+                                                        data: {
+                                                            types: ['city', 'county', 'state']
+                                                        },
+                                                        display: {
+                                                            allow_invalid: false,
+                                                            show_hint: !(trulia.browser.isMSIE && trulia.browser.version < 9)
+                                                        },
+                                                        select: function (data, el) {
+                                                            // Alameda County, CA
+                                                            // Alabama
+                                                            // Oakland, CA
+                                                            var locationArray = data.display.split(', ');
+
+                                                            $('#heatmap_autocomplete_value').val(data.display);
+
+                                                            switch (data.type)
+                                                            {
+                                                                case 'city':
+                                                                case 'county':
+                                                                    $('#hm_state').val(locationArray[1]);
+                                                                    $('#hm_location').val(locationArray[0]);
+                                                                    $('#search').val(locationArray[0]);
+                                                                    break;
+                                                                case 'state':
+                                                                    $('#hm_location').val('');
+                                                                    _.each(_STATES, function (val, key) {
+                                                                        if (val === data.display)
+                                                                        {
+                                                                            $('#hm_state').val(key);
+                                                                        }
+                                                                    });
+                                                                    $('#search').val('');
+                                                                    break;
+                                                                default:
+                                                                    $("#hm_state").val('all_states');
+                                                                    $("#hm_location").val('');
+                                                                    $("#search").val('');
+                                                                    break;
+                                                            }
+                                                            $('#hm_search_form').submit();
+                                                        }
+                                                    });
+                                                });
+                                            </script>
+                                            <div id="heatmap_location_auto" class="location_auto"></div>
+                                        </div>
+                                        <input id="heatmap_autocomplete_value" type="hidden" name="heatmap_autocomplete_value" value=""/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="mapCanvas" class="oocss" style="position: relative;">
+                <div class="mapControl box boxBasic overlayDefault mas pam" style="width: 115px;">
+                    <div id="affordabilityLayer">
+                        <form class="form mvn h7">
+                            <div class="field mvn">
+                                <ul class="fieldGroup">
+                                    <li class="mtn">
+                <span class="fieldItem">
+                  <label class="pls"><input class="mrs" type="radio" name="affordability" value="home_prices_listings" checked>Listing Price</label>
+                </span>
+                                    </li>
+                                    <li>
+                <span class="fieldItem">
+                  <label class="pls"><input class="mrs" type="radio" name="affordability" value="home_prices_sales">Sale Price</label>
+                </span>
+                                    </li>
+                                    <li>
+                <span class="fieldItem">
+                  <label class="pls"><input class="mrs" type="radio" name="affordability" value="home_prices_sales_sqft">Sale Price/Sqft</label>
+                </span>
+                                    </li>
+                                    <li>
+                <span class="fieldItem">
+                  <label class="pls"><input class="mrs" type="radio" name="affordability" value="valuations">Valuation</label>
+                </span>
+                                    </li>
+                                    <li class="mbn">
+                <span class="fieldItem">
+                  <label class="pls"><input class="mrs" type="radio" name="affordability" value="rental_prices">Rental Price</label>
+                </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="googleMapContainer" class="module" style="height: 400px;"></div>
+                <div id="legend" class="legendContainer boxBasic mapControl backgroundBasic" style="bottom: 5px;"></div>
+                <ul id="mapZoomControl" class="mapControl backgroundBasic listBorderedHover h5 clickable">
+                    <li class="pan man"><a class="mapZoomIn pvn phm linkLowlight" href="#">+</a></li>
+                    <li class="pan man"><a class="mapZoomOut pvn phm linkLowlight" href="#">&minus;</a></li>
+                </ul>
+                <div id="mapTypeControl" class="mapControl nav overlayDefault typeEmphasize txtC pvs">
+                    <a href="#" class="mapTypeControl hideFully phm pvs" data-map-type="hybrid"><i class="iconMap"></i>Map</a>
+                    <a href="#" class="mapTypeControl hideFully phm pvs" data-map-type="TruliaMap"><i class="iconGlobe"></i>Satellite</a>
+                </div>
+            </div>
+            <div class="module">
+                <div class="content clearfix">
+
+                    <div class="clear"></div>
+
+                    <div id="opt_pulldown" class="padl5 padb5 f12">
+                        <div class="padt5"><span class='pseudolinkBlue' id='OPTIONS_PD_ALP' onclick="HM_DO.updateDataTable('ALP','2017-08-23',1);">Average listing price</span>&nbsp;|&nbsp;<span class='pseudolinkBlue' id='OPTIONS_PD_MSP' onclick="HM_DO.updateDataTable('MSP','2017-08-23',1);">Median sales price</span>&nbsp;|&nbsp;<span class='pseudolinkBlue' id='OPTIONS_PD_TR' onclick="HM_DO.updateDataTable('TR','2017-08-23',1);">Trulia popularity</span></div>
+                        <div class="padt5"></div>
+                    </div>
+
+                    <div class="clear">
+                        <div id="heatmap_table" style="background-color:#f3f3f3;padding-top:8px;">
+                            <table width="100%" cellpadding="5" cellspacing="0" border="0">
+                                <thead>
+                                <tr style="padding-top:5px;background-color:#f3f3f3;">
+                                    <td valign="top" style="padding-left:15px;">
+                                        <div style="width:100px;white-space:nowrap;">
+                                            <div id="NAME_HEADER" onClick="HM_DO.updateDataTable('NAME');" class="pseudolink heat_map_title " style="float:left;font-weight:bold;font-size:13px;margin-left:-5px;">US states</div>
+                                        </div>
+                                    </td>
+                                    <td valign="top" align="right">
+                                        <div style="width:120px;white-space:nowrap;">
+                                            <div id="ALP_HEADER" onClick="HM_DO.updateDataTable('ALP','2017-08-23',1);" class="pseudolink heat_map_title heat_map_title_active" style="float:left;font-weight:bold;font-size:13px;margin-left:0px;">Avg. listing price</div>
+                                            <div style="clear:both;font-size:10px;">Week ending Aug 23</div>
+                                        </div>
+                                    </td>
+                                    <td valign="top" align="right">
+                                        <div style="width:140px;white-space:nowrap;">
+                                            <div id="MSP_HEADER" onClick="HM_DO.updateDataTable('MSP','2017-08-23',1);" class="pseudolink heat_map_title " style="float:left;font-weight:bold;font-size:13px;">Median sales price</div>
+                                            <div style="clear:both;font-size:10px;">Date range: May-Aug '17</div>
+                                        </div>
+                                    </td>
+                                    <td valign="top" align="right">
+                                        <div style="width:120px;white-space:nowrap;padding-right:10px;">
+                                            <div id="TR_HEADER" onClick="HM_DO.updateDataTable('TR','2017-08-23',1);" class="pseudolink heat_map_title " style="float:left;font-weight:bold;font-size:13px;margin-left:-5px;">Trulia popularity</div>
+                                            <div style="clear:both;font-size:10px;">Week ending Aug 23</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr style="background-color: #f3f3f3;font-size:10px;">
+                                    <td style="clear:both;padding-left:15px;padding-bottom:5px;color:#666666;">
+                                        <div onClick="HM_DO.updateDataTable('NAME');" class="pseudolink">
+                                            <div style="float:left;margin-bottom:3px;padding-right:2px;">Name</div>
+                                            <div style="float:left;"><img src="//static.trulia-cdn.com/images/sort_dn_off.gif" id="sort_img_name" border="0"></div>
+                                        </div>
+                                    </td>
+
+                                    <td style="clear:both;padding-right:5px;padding-bottom:5px;color:#666666;" align="right">
+                                        <div onClick="HM_DO.updateDataTable('ALP','2017-08-23',1);" class="pseudolink" style="float:right;">
+                                            <div style="float:left;margin-bottom:3px;padding-right:2px;">Amount</div>
+                                            <div style="float:left;"><img src="//static.trulia-cdn.com/images/sort_dn_on.gif" id="sort_img_ALP" border="0"></div>
+                                        </div>
+                                    </td>
+
+                                    <td style="clear:both;padding-right:5px;padding-bottom:5px;color:#666666;" align="right">
+                                        <div onClick="HM_DO.updateDataTable('MSP','2017-08-23',1);" class="pseudolink" style="float:right;">
+                                            <div style="float:left;margin-bottom:3px;padding-right:2px;">Amount</div>
+                                            <div style="float:left;"><img src="//static.trulia-cdn.com/images/sort_dn_off.gif" id="sort_img_MSP" border="0"></div>
+                                        </div>
+                                    </td>
+
+                                    <td style="clear:both;padding-right:5px;padding-bottom:5px;color:#666666;" align="right">
+                                        <div onClick="HM_DO.updateDataTable('TR','2017-08-23',1);" class="pseudolink" style="float:right;">
+                                            <div style="float:left;margin-bottom:3px;padding-right:2px;">Rank</div>
+                                            <div style="float:left;"><img src="//static.trulia-cdn.com/images/sort_dn_off.gif" id="sort_img_TR" border="0"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </thead>
+
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '15');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Hawaii/">Hawaii</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$905,687</td>
+                                    <td style="padding-right:5px;" align="right">$442,500</td>
+                                    <td style="padding-right:5px;" align="right">49</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '11');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/District_Of_Columbia/">District Of Columbia</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$773,286</td>
+                                    <td style="padding-right:5px;" align="right">$625,000</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '6');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/California/">California</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$697,539</td>
+                                    <td style="padding-right:5px;" align="right">$462,000</td>
+                                    <td style="padding-right:5px;" align="right">1</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '25');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Massachusetts/">Massachusetts</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$602,210</td>
+                                    <td style="padding-right:5px;" align="right">$379,000</td>
+                                    <td style="padding-right:5px;" align="right">7</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '36');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/New_York/">New York</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$565,227</td>
+                                    <td style="padding-right:5px;" align="right">$430,000</td>
+                                    <td style="padding-right:5px;" align="right">4</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '8');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Colorado/">Colorado</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$538,477</td>
+                                    <td style="padding-right:5px;" align="right">$331,000</td>
+                                    <td style="padding-right:5px;" align="right">19</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '49');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Utah/">Utah</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$440,946</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">29</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '9');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Connecticut/">Connecticut</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$435,585</td>
+                                    <td style="padding-right:5px;" align="right">$253,500</td>
+                                    <td style="padding-right:5px;" align="right">22</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '41');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Oregon/">Oregon</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$416,718</td>
+                                    <td style="padding-right:5px;" align="right">$315,000</td>
+                                    <td style="padding-right:5px;" align="right">20</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '12');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Florida/">Florida</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$406,803</td>
+                                    <td style="padding-right:5px;" align="right">$218,000</td>
+                                    <td style="padding-right:5px;" align="right">3</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '44');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Rhode_Island/">Rhode Island</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$405,450</td>
+                                    <td style="padding-right:5px;" align="right">$256,000</td>
+                                    <td style="padding-right:5px;" align="right">45</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '53');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Washington/">Washington</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$378,565</td>
+                                    <td style="padding-right:5px;" align="right">$332,719</td>
+                                    <td style="padding-right:5px;" align="right">17</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '34');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/New_Jersey/">New Jersey</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$372,916</td>
+                                    <td style="padding-right:5px;" align="right">$290,000</td>
+                                    <td style="padding-right:5px;" align="right">12</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '24');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Maryland/">Maryland</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$369,454</td>
+                                    <td style="padding-right:5px;" align="right">$290,000</td>
+                                    <td style="padding-right:5px;" align="right">33</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '16');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Idaho/">Idaho</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$349,000</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">25</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '51');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Virginia/">Virginia</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$341,015</td>
+                                    <td style="padding-right:5px;" align="right">$297,500</td>
+                                    <td style="padding-right:5px;" align="right">5</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '32');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Nevada/">Nevada</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$331,971</td>
+                                    <td style="padding-right:5px;" align="right">$249,300</td>
+                                    <td style="padding-right:5px;" align="right">8</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '4');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Arizona/">Arizona</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$322,398</td>
+                                    <td style="padding-right:5px;" align="right">$225,000</td>
+                                    <td style="padding-right:5px;" align="right">15</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '48');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Texas/">Texas</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$320,067</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">2</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '30');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Montana/">Montana</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$314,959</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">35</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '33');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/New_Hampshire/">New Hampshire</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$310,914</td>
+                                    <td style="padding-right:5px;" align="right">$245,000</td>
+                                    <td style="padding-right:5px;" align="right">34</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '50');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Vermont/">Vermont</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$306,034</td>
+                                    <td style="padding-right:5px;" align="right">$325,000</td>
+                                    <td style="padding-right:5px;" align="right">46</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '10');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Delaware/">Delaware</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$303,971</td>
+                                    <td style="padding-right:5px;" align="right">$210,000</td>
+                                    <td style="padding-right:5px;" align="right">44</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '13');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Georgia/">Georgia</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$296,535</td>
+                                    <td style="padding-right:5px;" align="right">$193,000</td>
+                                    <td style="padding-right:5px;" align="right">14</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '56');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Wyoming/">Wyoming</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$291,855</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">36</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '45');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/South_Carolina/">South Carolina</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$291,636</td>
+                                    <td style="padding-right:5px;" align="right">$181,500</td>
+                                    <td style="padding-right:5px;" align="right">18</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '27');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Minnesota/">Minnesota</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$290,514</td>
+                                    <td style="padding-right:5px;" align="right">$240,000</td>
+                                    <td style="padding-right:5px;" align="right">42</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '17');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Illinois/">Illinois</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$277,163</td>
+                                    <td style="padding-right:5px;" align="right">$212,000</td>
+                                    <td style="padding-right:5px;" align="right">39</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '37');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/North_Carolina/">North Carolina</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$276,389</td>
+                                    <td style="padding-right:5px;" align="right">$210,000</td>
+                                    <td style="padding-right:5px;" align="right">13</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '23');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Maine/">Maine</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$275,717</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">27</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '47');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Tennessee/">Tennessee</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$268,692</td>
+                                    <td style="padding-right:5px;" align="right">$190,000</td>
+                                    <td style="padding-right:5px;" align="right">9</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '2');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Alaska/">Alaska</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$267,404</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">31</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '35');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/New_Mexico/">New Mexico</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$254,798</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">21</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '46');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/South_Dakota/">South Dakota</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$238,163</td>
+                                    <td style="padding-right:5px;" align="right">$177,500</td>
+                                    <td style="padding-right:5px;" align="right">48</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '22');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Louisiana/">Louisiana</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$232,610</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">41</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '31');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Nebraska/">Nebraska</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$230,000</td>
+                                    <td style="padding-right:5px;" align="right">$178,000</td>
+                                    <td style="padding-right:5px;" align="right">43</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '38');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/North_Dakota/">North Dakota</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$226,863</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">50</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '42');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Pennsylvania/">Pennsylvania</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$224,090</td>
+                                    <td style="padding-right:5px;" align="right">$191,000</td>
+                                    <td style="padding-right:5px;" align="right">6</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '55');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Wisconsin/">Wisconsin</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$223,480</td>
+                                    <td style="padding-right:5px;" align="right">$197,000</td>
+                                    <td style="padding-right:5px;" align="right">40</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '21');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Kentucky/">Kentucky</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$213,848</td>
+                                    <td style="padding-right:5px;" align="right">$170,000</td>
+                                    <td style="padding-right:5px;" align="right">26</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '1');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Alabama/">Alabama</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$212,733</td>
+                                    <td style="padding-right:5px;" align="right">$171,500</td>
+                                    <td style="padding-right:5px;" align="right">10</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '26');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Michigan/">Michigan</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$212,694</td>
+                                    <td style="padding-right:5px;" align="right">$164,000</td>
+                                    <td style="padding-right:5px;" align="right">11</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '29');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Missouri/">Missouri</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$204,506</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">30</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '40');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Oklahoma/">Oklahoma</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$201,091</td>
+                                    <td style="padding-right:5px;" align="right">$150,000</td>
+                                    <td style="padding-right:5px;" align="right">23</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '28');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Mississippi/">Mississippi</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$195,390</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">38</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '5');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Arkansas/">Arkansas</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$191,446</td>
+                                    <td style="padding-right:5px;" align="right">$156,000</td>
+                                    <td style="padding-right:5px;" align="right">16</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '18');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Indiana/">Indiana</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$190,843</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">28</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '39');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Ohio/">Ohio</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$190,371</td>
+                                    <td style="padding-right:5px;" align="right">$154,900</td>
+                                    <td style="padding-right:5px;" align="right">24</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '20');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Kansas/">Kansas</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$187,649</td>
+                                    <td style="padding-right:5px;" align="right">-</td>
+                                    <td style="padding-right:5px;" align="right">32</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#EDEFF2', 'click', '19');" onMouseOver="HM_DO.rowMngr(this, '#EDEFF2', 'over');" onMouseOut="HM_DO.rowMngr(this, '#EDEFF2', 'out');" style="background-color: #EDEFF2;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/Iowa/">Iowa</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$185,087</td>
+                                    <td style="padding-right:5px;" align="right">$157,000</td>
+                                    <td style="padding-right:5px;" align="right">47</td>
+                                </tr>
+                                <tr onClick="HM_DO.rowMngr(this, '#FFFFFF', 'click', '54');" onMouseOver="HM_DO.rowMngr(this, '#FFFFFF', 'over');" onMouseOut="HM_DO.rowMngr(this, '#FFFFFF', 'out');" style="background-color: #FFFFFF;">
+                                    <td style="padding-left:15px;"><a href="/home_prices/West_Virginia/">West Virginia</a>
+                                    </td>
+                                    <td style="padding-right:5px;" align="right">$174,865</td>
+                                    <td style="padding-right:5px;" align="right">$136,500</td>
+                                    <td style="padding-right:5px;" align="right">37</td>
+                                </tr>
+
+
+                            </table>
+
+                        </div>
+
+                    </div>
+                    <div style="clear:both;padding-top:20px;">
+                        See home prices and popularity trends &#8212; sort by average listing price, median sales price, and search popularity.
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="footer" class="mart40 clear">
+
+                <div id="footerlinks" class="clear ">
+
+                    <h2>Residential Real Estate</h2>
+                    <p class="mar0 mart5">
+                        <a href="/CA/San_Francisco/">San&nbsp;Francisco&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/NY/New_York/">New&nbsp;York&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/CA/Los_Angeles/">Los&nbsp;Angeles&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/FL/Orlando/">Orlando&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/FL/Miami/">Miami&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/PA/Philadelphia/">Philadelphia&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/AZ/Phoenix/">Phoenix&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/CA/San_Diego/">San&nbsp;Diego&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/CA/San_Jose/">San&nbsp;Jose&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/IL/Chicago/">Chicago&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/sitemap/Arizona-real-estate/">Arizona&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/sitemap/California-real-estate/">California&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/sitemap/Florida-real-estate/">Florida&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/sitemap/Illinois-real-estate/">Illinois&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/sitemap/Massachusetts-real-estate/">Massachusetts&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/sitemap/New_Jersey-real-estate/">New&nbsp;Jersey&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/sitemap/Pennsylvania-real-estate/">Pennsylvania&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/sitemap/Texas-real-estate/">Texas&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/sitemap/">Other&nbsp;local&nbsp;real&nbsp;estate</a>
+                        &nbsp;|&nbsp;
+                        <a href="/rent-sitemap/California-apartments/">California&nbsp;apartments</a>
+                        &nbsp;|&nbsp;
+                        <a href="/rent-sitemap/New-York-apartments/">New&nbsp;York&nbsp;apartments</a>
+                        &nbsp;|&nbsp;
+                        <a href="/rent-sitemap/Texas-apartments/">Texas&nbsp;apartments</a>
+                        &nbsp;|&nbsp;
+                        <a href="/rent-sitemap/">Apartments&nbsp;for&nbsp;rent</a>
+                        &nbsp;|&nbsp;
+                        <a href="/home_prices/">Home&nbsp;price&nbsp;maps</a>
+                        &nbsp;|&nbsp;
+                        <a href="/voices/sitemap/">Real&nbsp;estate&nbsp;community</a>
+                        &nbsp;|&nbsp;
+                        <a href="/property-sitemap/">U.S. Property records</a>
+                        &nbsp;|&nbsp;
+                        <a href="/mortgage-sitemap/">Mortgage site map</a>
+                    </p>
+
+                </div>
+
+                <div id="footer_main" class="clearfix padb20 padt15 padl25">
+                    <div id="ftr2">
+                        <h2>Explore Trulia</h2>
+                        <ul>
+                            <li><a class="hfsale" href="/">Homes for Sale</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/for_rent/" >Homes for Rent</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/city/">Stats &amp; Trends</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/voices/">Real Estate Advice</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/mobile/">Real Estate Apps</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="http://developer.trulia.com/" rel="nofollow">Trulia API</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/trulia_estimates/">Trulia Estimates</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="ftr4">
+                        <h2>For Professionals</h2>
+                        <ul>
+                            <li><a href="/agents/" rel="follow">Agents</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/advertisers/brokers/" rel="follow">Brokers</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/advertisers/" rel="follow">Partners</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a class="submit_listings" href="/submit_listings/" rel="follow">Submit Your Listings</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/truliapro/" rel="follow">Real Estate Leads</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/sitemap/directory" rel="follow">Directory Site Map</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="ftr1">
+                        <h2>Corporate</h2>
+                        <ul>
+                            <li><a href="/about/" target="_self" rel="follow">About Trulia</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="http://www.zillowgroup.com/about-zillow-group/" target="_blank" rel="nofollow">About Zillow Group</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="http://info.trulia.com/" rel="follow">News Room</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="http://www.trulia.com/jobs/" rel="follow">Careers</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="http://investors.zillowgroup.com/" target="_blank" rel="nofollow">Investor Relations</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/privacy/" rel="nofollow" target="_self">Privacy</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/terms/" rel="nofollow" target="_self">Terms of Use</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/listings_quality_policy/" target="_self" rel="nofollow">Listings Quality Policy</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/ad/terms/" rel="nofollow" target="_self">Subscription Terms</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/guidelines/" rel="nofollow" target="_self">Community Guidelines</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="/terms/advertisers" rel="nofollow" target="_self">Advertising Terms</a><span>&nbsp; | &nbsp;</span></li>
+                            <li><a href="http://preferences-mgr.truste.com/?type=trulia&pid=trulia01&aid=trulia01" target="_blank" rel="nofollow">Ad Choices</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer_desc_links" class="">
+
+            </div>
+
+            <div class="clear padb20 padt5 f11">
+                <div class="fleft">
+                    Copyright &copy; 2017
+                    Trulia, LLC. All rights reserved. &nbsp; | &nbsp;
+                    <a href="http://www.hud.gov/offices/fheo/index.cfm" target="_blank" rel="nofollow" class="blackcolortxtlink imgsheet" id="fheo_logo">Equal Housing Opportunity</a>
+                </div>
+                <div class="fright quote_icon imgsheet">Have a question? Visit our <a href="/help/" >Help Center</a> to find the answer</div>
+            </div>
+
+            <div><br/></div>
+
+            <!-- Begin comScore Tag -->
+            <script>
+                document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+            </script>
+            <script>
+                function runBeacon()
+                {
+                    try {
+                        var tempurl = window.location.href;
+                        var regex = new RegExp("((http|https)://)([a-zA-Z0-9]+\.)(.*)");
+                        var comurl = tempurl.match(regex);
+                        var beacon_url = comurl[3]+comurl[4];
+
+                        try {
+                            var id = getCookie('tlftmusr');
+                        } catch (e) {
+                            var id = '';
+                        }
+
+                        COMSCORE.beacon({
+                            c1:2,
+                            c2:6036206,
+                            c3:"",
+                            c4:beacon_url,
+                            c5:"",
+                            c6:"",
+                            c15:id
+                        });
+                    } catch (e) {}
+                };
+                runBeacon();
+            </script>
+            <noscript>
+                <img src="http://b.scorecardresearch.com/p?c1=2&c2=6036206&c3=&c4=&c5=&c6=&c15=&cj=1" />
+            </noscript>
+            <!-- End comScore Tag -->
+
+            <script src="//static.trulia-cdn.com/javascript/ba8ed86/include/js/library/3rd_party/jquery-ui/jquery-ui-1.8.23.min.js"></script>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        trulia.PixelTracking.firePixel(trulia.PixelTracking.TYPE_GLOBAL_REMARKETING);
+        trulia.PixelTracking.firePixel(trulia.PixelTracking.TYPE_UNIQUE_CONVERSION);
+
+
+        <!--[if !IE]> Script below Copyright 1997-2004 Omniture, Inc. <![endif]-->
+        s.channel = unescape('Heat%20Maps');
+        s.events = unescape('event5');
+        s.pageName = unescape('Heat%20Maps');
+        s.prop58 = unescape('Heat%20Maps');
+        s.eVar58 = unescape('Heat%20Maps');
+        s.eVar15 = unescape('42');
+        s.eVar19 = unescape('cbs000');
+        s.eVar6 = unescape('2017.42');
+        s.eVar18 = unescape('rmugbrkhcmqk5huoa626asm4s2');
+        s.eVar5 = unescape('171022oy8xqra55b3ot634f3lycgu000');
+        s.prop38 = unescape('Heat%20Maps%7CUnregistered');
+        s.eVar25 = unescape('20171022');
+        s.eVar39 = unescape('NULL');
+        s.eVar40 = unescape('NULL');
+        s.eVar41 = unescape('NULL');
+        s_campaign = unescape('');
+
+        s.loadOmniFromDTM = true;
+        s_campaign = typeof s_campaign === 'undefined' ? '' : s_campaign;
+
+        if (typeof s.doPlugins == 'function') {
+            s.doPlugins(s, s_campaign);
+        }
+
+        // _satellite is a global object generated by Adobe DTM. See for more info: https://marketing.adobe.com/resources/help/en_US/dtm/object_reference.html
+        if ((typeof _satellite === 'undefined') || (_satellite.getDataElement("adobeDTMflag") === null)) {
+
+            if (typeof s.t == 'function') {
+                var s_code = s.t();
+                if (s_code) {
+                    document.write(s_code);
+                }
+            }
+        }
+
+
+
+
+        var utag_data = {"page_type":null,"page_name":"Heat Maps","campaign":"","site_section":"Heat Maps","server_code":"42","session_id":"rmugbrkhcmqk5huoa626asm4s2","cobrand_site":"cbs000","date_first_visit":"20171022","page_reg_status":"Heat Maps|Unregistered","user_id":"171022oy8xqra55b3ot634f3lycgu000","user_type":"NULL","user_sub_type":"NULL"};
+
+
+    </script>
+
+    <table border="0" cellspacing="0" cellpadding="0" class="hidden new_popup beingModal popup_table " id="heatmap_about_box" onclick="doNothing(event);">
+        <tr>
+            <td class="popup_top_left">
+                <div class="trulia_popup_c">
+                    <div class="trulia_popup popup_background">
+                        <div class="trulia_popup_content">
+                            <div class="h4 typeEmphasize clearfix ">
+                                <div class="fleft" id="heatmap_about_box_popup_header" style="float: left;">How to use Heat Maps</div>
+                                <a href="" id="heatmap_about_box_popup_closer" onclick="toggle_menu(event, 'heatmap_about_box', 0); return false;"
+                                   class="container-close notlink " style="position: absolute;" title="Close">&nbsp;</a>
+                            </div>
+                            <div style="clear: both; display: block; height: 0; visibility: hidden;"></div>
+                            <div class="clearfix ">
+
+                                <ul style="margin-top:5px;padding-left:14px;">
+                                    <li><b>Map colors</b> represent relative values:<br/>
+                                        &nbsp; &nbsp;<span style="color:#cc3300;">red = high</span><br/>
+                                        &nbsp; &nbsp;<span style="color:#ffcc00;">yellow = moderate</span><br/>
+                                        &nbsp; &nbsp;<span style="color:#669900;">green = low</span><br/>
+                                    </li>
+                                    <li>To <b>see details</b> and get a Heat Map for each map area, click the icon in the center of the area.</li>
+                                    <li>To <b>move the map</b>, click and drag</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<script type="text/template" id="legendTemplate"></script>
+
+<script type="text/template" id="mapTileLegendTemplate">
+    <div class="h7 mvn phs <% if (!visible) { %>hideFully<% } %>">
+        <% if (title) { %>
+        <div class="<%= icon %> txtC"><%= title %></div>
+        <% } %>
+        <ul class="listInline mvn lhs txtC">
+            <li>
+                <span><%= low %></span>
+            </li>
+            <li>
+                <% _.each(colors, function(c) { %><div class="mapTileLegendGradient" style="background-color:<%= c %>;"></div><% }); %>
+            </li>
+            <li>
+                <span><%= high %></span>
+            </li>
+        </ul>
+    </div>
+</script>
+
+<script type="text/template" id="affordabilityHoverCardTemplate">
+    <div class="boxHead boxHeadBasic typeEmphasize h7">
+        <%= title %>
+    </div>
+    <div class="boxBody h7">
+        Median: <%= medianPrice %>
+    </div>
+</script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBiBQk23rLklPI3a3kpWZKvQySC0wHf1Pk&libraries=geometry"></script>
+
+
+
+<script>
+    window.TRULIA_MAPS_BOOTSTRAP = {
+        mapTileServer: 'https://tiles.trulia.com/',
+        heatMapVersions: {"domain":"https:\/\/tiles.trulia.com","slope":{"uri":"tiles\/slope","version":"20161205"},"wildfires":{"uri":"tiles\/wildfires","version":"20160224"},"hurricanes":{"uri":"tiles\/hurricanes","version":"20160224"},"percent_college":{"uri":"tiles\/percent_college","version":"20160224"},"transit":{"uri":"tiles\/transit","version":"20160224"},"median_age":{"uri":"tiles\/median_age","version":"20160224"},"groceries":{"uri":"tiles\/groceries","version":"20170405"},"aspect":{"uri":"tiles\/aspect","version":"20170113"},"seismic_hazard":{"uri":"tiles\/seismic_hazard","version":"20160224"},"arts":{"uri":"tiles\/arts","version":"20170405"},"home_prices_sales":{"uri":"tiles\/home_prices_sales","version":"20170927"},"care_essentials":{"uri":"tiles\/care_essentials","version":"20170412"},"singles_living_alone":{"uri":"tiles\/singles_living_alone","version":"20160224"},"zombie_risk":{"uri":"tiles\/zombie_risk","version":"20161022"},"shopping":{"uri":"tiles\/shopping","version":"20170405"},"valuations":{"uri":"tiles\/valuations","version":"20160224"},"great_places_to_play":{"uri":"tiles\/great_places_to_play","version":"20170412"},"parallel_universe":{"uri":"tiles\/parallel_universe","version":"20161023"},"rental_prices":{"uri":"tiles\/rental_prices","version":"20170927"},"tornados":{"uri":"tiles\/tornados","version":"20160224"},"schools":{"uri":"tiles\/schools","version":"20160224"},"tree_cover":{"uri":"tiles\/tree_cover","version":"20161221"},"zipcode_labels":{"uri":"tiles\/zipcode_labels","version":"20160224"},"gyms":{"uri":"tiles\/gyms","version":"20170405"},"nightlife":{"uri":"tiles\/nightlife","version":"20170405"},"flood_zones":{"uri":"tiles\/flood_zones","version":"20160224"},"restaurants":{"uri":"tiles\/restaurants","version":"20170405"},"quiet_streets":{"uri":"tiles\/quiet_streets","version":"20160224"},"home_prices_sales_sqft":{"uri":"tiles\/home_prices_sales_sqft","version":"20170927"},"percent_married":{"uri":"tiles\/percent_married","version":"20160224"},"crime_email":{"uri":"tiles\/crime_email","version":"20170816"},"owner_occupied":{"uri":"tiles\/owner_occupied","version":"20160224"},"traffic_volume":{"uri":"tiles\/traffic_volume","version":"20160903"},"percent_multiunit":{"uri":"tiles\/percent_multiunit","version":"20160224"},"faults":{"uri":"tiles\/faults","version":"20160224"},"noise":{"uri":"tiles\/noise","version":"20170724"},"beauty":{"uri":"tiles\/beauty","version":"20170405"},"crime_heatmap":{"uri":"tiles\/crime_heatmap","version":"20170807"},"vampire_risk":{"uri":"tiles\/vampire_risk","version":"20161022"},"median_move_in_year":{"uri":"tiles\/median_move_in_year","version":"20160224"},"year_built":{"uri":"tiles\/year_built","version":"20160224"},"cafes":{"uri":"tiles\/cafes","version":"20170405"},"commute_time":{"uri":"tiles\/commute_time","version":"20160224"},"home_prices_listings_neighborhood":{"uri":"tiles\/home_prices_listings_neighborhood","version":"20160224"},"ghost_risk":{"uri":"tiles\/ghost_risk","version":"20161022"},"parcels":{"uri":"tiles\/parcels","version":"20160224"},"home_prices_listings":{"uri":"tiles\/home_prices_listings","version":"20170927"},"rental_prices_nolabel":{"uri":"tiles\/rental_prices_nolabel","version":"20170927"}}
+    };
+
+    trulia.homePrices = trulia.homePrices || {};
+    trulia.homePrices.initialMapType = 'TruliaMap';
+    trulia.homePrices.initialBounds = [
+        new google.maps.LatLng(24.544701, -66.949895),
+        new google.maps.LatLng(49.384358, -124.733174)
+    ];
+</script>
+<script>
+    require.config({
+        baseUrl: "//static.trulia-cdn.com/javascript/ba8ed86/include/js/_built/"
+    });
+
+    require(['common'], function () {
+        require(['home_prices/home_prices_main']);
+    });
+</script>
+
+</body>
+</html>

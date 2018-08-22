@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Q6-Interactive Visualization</title>
+		<script src="../lib/d3.v3.min.js"></script>
+		<style type="text/css">
+			.axis path,
+			.axis line {
+				fill: none;
+				display: none;
+				stroke: black;
+				shape-rendering: crispEdges;
+			}
+			.axis text {
+				font-family: sans-serif;
+				fill:#B19693;
+				font-size: 13px;
+			}
+			.axis_1 path,
+			.axis_1 line {
+				fill: none;
+				stroke: #B19693;
+				shape-rendering: crispEdges;
+			}
+			.axis_1 text {
+				font-family: sans-serif;
+				fill:#B19693;
+				font-size: 13px;
+			}
+			path { 
+			    stroke: #58B2DC;
+			    stroke-width: 2;
+			    fill: none;
+			}
+			.label {
+				font-family: sans-serif;
+				fill:#B19693;
+				font-size: 13px;
+			}
+		</style>
+	</head>
+	<body></body>
+		<script type="text/javascript">
+			var data = [
+						{club:'Manchester United',value:{year_2013:3165, year_2014:2810, year_2015:3100, year_2016:3317, year_2017:4583}},
+						{club:'Chelsea',value:{year_2013:901, year_2014:868, year_2015:1370, year_2016:1661, year_2017:1845}},
+						{club:'Manchester City',value:{year_2013:689, year_2014:863, year_2015:1380, year_2016:1921, year_2017:2083}},
+						{club:'Liverpool',value:{year_2013:651, year_2014:704, year_2015:982, year_2016:1548, year_2017:1492}},
+						{club:'Arsenal',value:{year_2013:1326, year_2014:1331, year_2015:1310, year_2016:2017, year_2017:1932}}
+						];
+			var svg = d3.select('body')
+						.append('svg')
+						.attr({'width':1200,'height':500});
+			var output = d3.nest()
+			              .key(function(d){return d.club})
+			              .rollup(function(d){
+			                return d3.sum(d,function(g) {
+			                	var a = 0;
+			                	for (var s in g.value)
+			                		a+=g.value[s];
+			                	return a;
+			                	});
+			              }).entries(data);
+			var xscale = d3.scale.linear()
+								.domain([0,d3.max(output,function(d) {return d.values;})])
+								.range([50,500]);
+			var yscale = d3.scale.ordinal()
+								.domain(output.map(function(d){
+									return d.key;
+								}))
+								.rangeBands([50,300]);
+	
+			var yaxis = d3.svg.axis()
+							.orient('left')
+							.scale(yscale);
+			var y_xis = svg.append('g')
+						  .attr("transform", "translate(150,20)")
+						  .attr('class','axis')
+						  .call(yaxis);
+
+			svg.selectAll(".tile")
+		        .data(output)
+		        .enter()
+		        .append("rect")
+		        .attr("class", "tile")
+		        .attr("x", 150)
+		        .attr("y", function(d,i){ 
+		        	return i*50+80;})
+		        .attr("width", function(d){ 
+		        	return xscale(d.values);})
+		        .attr("height",  30)
+		        .style("fill", "#B19693")
+		        .on('mouseover', handleMouseOver)
+		        .on("mouseout",handleMouseOut);
+		    svg.selectAll(".text")
+		    	.data(output)
+		    	.enter()
+		    	.append("text")
+		    	.attr("class", "text")
+		        .attr("x", 160)
+		        .attr("y", function(d,i){ 
+		        	return i*50+100;})
+		        .style("font-family", "sans-serif") 
+		        .style("font-size", "13px") 
+		    	.text(function(d){return "$"+d.values})
+		    	.style("fill","white");
+
+		    function handleMouseOver(d,i){
+		    	var temp = [];
+		    	for(var s in data){
+		    		if(data[s]['club'] == d['key']){
+		    			var year = 2013;
+		    			for(var b in data[s]['value']){
+		    				var obj = {};
+		    				obj['year'] = year++;
+		    				obj['value'] = data[s]['value'][b];
+		    				temp.push(obj);
+		    			}
+		    		}	
+		    	}
+		    	d3.selectAll('.linechart').remove();
+		 		var svg1 = svg.append('svg')
+						.attr('class','linechart')
+						.attr('x',750)
+						.attr({'width':500,'height':500});
+				var x_scale = d3.scale.ordinal()
+									.domain(temp.map(function(d){
+										return d.year;
+									}))
+									.rangeBands([0,170]);
+				var y_scale = d3.scale.linear()
+								.domain([d3.min(temp,function(d) {return d.value;})-100,d3.max(temp,function(d) {return d.value;})+100])
+								.range([170,50]);
+				var x_axis = d3.svg.axis()
+							.orient('bottom')
+							.scale(x_scale);
+				var y_axis = d3.svg.axis()
+							.orient('left')
+							.ticks(6)
+							.scale(y_scale);
+
+		    	svg1.append('g')
+					  .attr("transform", "translate(50,170)")
+					  .attr('class','axis_1')
+					  .call(x_axis);
+				svg1.append('g')
+					  .attr("transform", "translate(50,0)")
+					  .attr('class','axis_1')
+					  .call(y_axis);
+				var line = d3.svg.line()
+						    .x(function(d) { return 50+x_scale(d.year); })
+						    .y(function(d) { return y_scale(d.value); });
+				svg1.append("path")
+			        .attr("class", "line")
+			        .attr("d", line(temp));
+			    svg1.append("text")
+			        .attr("class", "label")
+			        .attr("x", 230)
+			        .attr("y", 210)
+			        .attr("text-anchor", "end")
+			        .text("Year");
+			    svg1.append("text")
+			        .attr("class", "label")
+			        .attr("x", 40)
+			        .attr("y", 40)
+			        .attr("text-anchor", "end")
+			        .text("Value");
+
+		    	d3.select(this).style({
+	              fill: "#58B2DC"});
+		    }
+		    function handleMouseOut(d,i) {
+		    	d3.selectAll('.linechart').remove();
+		    	d3.select(this).style({
+	              fill: "#B19693"});
+		    }
+		</script>
+</html>

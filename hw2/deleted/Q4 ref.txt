@@ -1,0 +1,4 @@
+Read houses into an array: https://stackoverflow.com/questions/20456232/d3-js-is-there-a-way-to-access-csv-header-values-into-a-dropdown
+Template: http://bl.ocks.org/tjdecke/5558084
+Dropdown: http://bl.ocks.org/jhubley/17aa30fd98eb0cc7072f
+Text tag: http://www.d3noob.org/2013/01/adding-title-to-your-d3js-graph.html

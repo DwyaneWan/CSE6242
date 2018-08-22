@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q7</title>
+    <script type="text/javascript" src="../lib/d3.v3.min.js"></script>
+    <script type="text/javascript" src="../lib/d3.tip.v0.6.3.js"></script>
+    <script type="text/javascript" src="../lib/topojson.v1.min.js"></script>
+    <script type="text/javascript" src="../lib/d3-queue.v3.min.js"></script>
+    <style>
+        div {
+            text-align: center;
+        }
+        .states {
+            stroke: #fff;
+        }
+        .d3-tip {
+            line-height: 1;
+            padding: 10px;
+            font-size: 16px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border-radius: 15px;
+        }
+        header {
+            margin-top: 100px;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header> Median Earnings by State </header>
+<div id="chart"></div>
+<script type="text/javascript">
+
+    // initialization
+    var margin = {top: 0, right: 0, bottom: 0, left: 0},
+        width = 1000 - margin.left - margin.right,
+        height = 800 - margin.top - margin.bottom,
+        colors = ["#ffffcc", "#ffeda0", "#fed976", "#feb24c", "#fd8d3c", "#fc4e2a",
+            "#e31a1c", "#bd0026", "#800026"],
+        colorScale = d3.scale.quantile().range(colors),
+        svg = d3.select("#chart")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // create tooltip
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(show5least);
+    svg.call(tip);
+
+    // read in the data
+    d3.queue()
+        .defer(d3.json, "us.json")
+        .defer(d3.csv, "median_ages.csv")
+        .defer(d3.json, "median_earnings.json")
+        .await(drawGraph);
+
+    var earnings = d3.map(),
+        ages = d3.map();
+
+    // draw the choropleth
+    function drawGraph(error, us, median_ages, median_earnings) {
+        if (error) throw error;
+
+        // process and extract the data
+        median_ages.forEach(function(d) {
+            var obj = ages.get(d.id)||[];
+            d.median_age = +d.median_age;
+            obj.push({name:d.name, age:d.median_age});
+            ages.set(d.id, obj);
+        });
+
+        median_earnings.forEach(function(d){
+            d.median_earnings = +d.median_earnings;
+            earnings.set(d.id, d.median_earnings);
+        });
+
+        // input the domain for color scale
+        var minE = d3.min(median_earnings, function(d) {
+            if (d.median_earnings !== 0) return d.median_earnings;
+        });
+        console.log(JSON.stringify(minE));
+        var maxE = d3.max(median_earnings, function(d) { return d.median_earnings; });
+        colorScale.domain([minE, maxE]);
+
+        // draw the choropleth
+        var path = d3.geo.path();
+        svg.append("g")
+            .attr("class", "states")
+            .selectAll("path")
+            .data(topojson.feature(us, us.objects.states).features)
+            .enter()
+            .append("path")
+            .attr("d", path)
+            .attr("fill", function(d) { return colorScale(earnings.get(d.id)); })
+            .on("mouseover", tip.show)
+            .on("mouseout", tip.hide);
+
+        // draw the legend
+        var legend = svg.selectAll(".legend")
+            .data([minE].concat(colorScale.quantiles()), function(d) {return d;});
+
+        legend.enter()
+            .append("g")
+            .attr("class", "legend")
+            .append("rect")
+            .attr("x", 850)
+            .attr("y", function(d, i) {return 300 + 20 * i; })
+            .attr("width", 20)
+            .attr("height", 20)
+            .style("fill", function(d, i) {return colors[i]});
+
+        legend.append("text")
+            .attr("x",  875)
+            .attr("y", function(d, i) {return 315 + 20 * i; })
+            .attr("font-size", "14px")
+            .text(function(d) {return Math.round(d / 1000) * 1000;});
+
+    }
+
+    // function to determin what to show on the tool tip
+    function show5least(data) {
+        var medians = ages.get(data.id);
+        medians.sort(function(a, b) { return (a.age < b.age)? -1 : ((a.age > b.age)? 1 : 0); });
+        medians.splice(5);
+
+        var res = "";
+        medians.forEach(function(d) {
+            res += d.name + " (Age: " + d.age + ")" + "<br>";
+        });
+        return res;
+    }
+
+
+
+
+</script>
+</body>
+</html>

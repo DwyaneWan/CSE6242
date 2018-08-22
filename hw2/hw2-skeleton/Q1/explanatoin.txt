@@ -1,0 +1,4 @@
+a.
+I used excel to create the table because it is the techniques that I am most familiar with, and creating tables is what excel is good at. I choose to only keep the total populations because those are the only important information. I choose to reorganize the origins into columns because the data will be more straightforward in this way.
+b.
+I merged the lines into a single chart because it's easier to compare the lines. I assigned different colors to the lines because in this way the lines are more easily distinguished and better looking. As suggested, the lines thickness varies over paths to tell apart the higher values and the lower values.
