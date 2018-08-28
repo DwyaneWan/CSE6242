@@ -1,0 +1,6 @@
+Line 21: Read in the file and split each line in the file by a tab. This generates entries with 3 parts, source, target and weight. 
+Line 23: Create a Dataframe using reflection from the input, and filter out the edges with weight less than 5 at the same time.
+Line 25: Get the weight of the edges for each node where the node is a source node, and the values negative, and call it out weight.
+Line 27: Do the same for in weight, except making the values negative.
+Line 29: Union the out weight and in weight for each node.
+Line 31: Calculate the accumulated weight for each node. Format the result and the task is finished.
