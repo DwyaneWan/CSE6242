@@ -1,0 +1,7 @@
+bigrams = LOAD 's3://cse6242-2017fall-aws-big/*' AS (bigram: chararray, year: int, occurrences: int, books: int);
+filtered = FILTER bigrams BY occurrences >= 100 AND books >= 20;
+groups = GROUP filtered BY bigram;
+divided = FOREACH groups GENERATE $0 AS key, (double)SUM($1.occurrences)/(double)SUM($1.books) AS avg;
+ordered = ORDER divided BY avg DESC, key ASC;
+res = LIMIT ordered 10;
+STORE res INTO 's3://cse6242-lwan34/output-big' USING PigStorage('\t');
