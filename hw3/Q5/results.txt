@@ -1,0 +1,21 @@
+1. Linear Regression with 0.75 fraction:
+Mean Absolute Error		1656.147651
+Root Mean Squared Error		2456.983209
+Relative Absolute Error		0.276606
+Relative Squared Error		0.089608
+Coefficient of Determination	0.910392
+
+2. Linear Regression with 0.9 fraction:
+Mean Absolute Error		1265.001752
+Root Mean Squared Error		1783.328763
+Relative Absolute Error		0.253181
+Relative Squared Error		0.067781
+Coefficient of Determination	0.932219
+
+3. Decision Forest Regression with 0.75 fraction:
+Negative Log Likelihood			426.351322
+Mean Absolute Error			1416.157168
+Root Mean Squared Error			2041.451874
+Relative Absolute Error			0.236523
+Relative Squared Error			0.061862
+Coefficient of Determination		0.938138
