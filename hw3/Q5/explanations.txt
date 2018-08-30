@@ -1,0 +1,1 @@
+Different ML models have different algorithms which are suitable for datasets with different characteristics. For example, linear regression works nicely when the data has a linear shape. Decision Forest Regression can represent non-linear decision boundaries. In out case, Decision Forest performs slightly better might because the data is not so linear.
